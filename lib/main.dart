@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:walletapp/Screens/menu.dart';
 import 'package:walletapp/Screens/options.dart';
 import 'package:walletapp/Screens/splash.dart';
 import 'package:walletapp/Screens/login.dart';
@@ -29,6 +30,7 @@ class _MyAppState extends State<MyApp> {
           SplashScreen.id: (context) => SplashScreen(),
           Login.id:(context)=> Login(),
           Options.id:(context)=> Options(),
+          MenuScreen.id:(context)=>MenuScreen(),
 
 
 

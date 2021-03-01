@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:walletapp/Screens/menu.dart';
 import 'package:walletapp/components/constants.dart';
 import 'package:walletapp/components/customRoundedButton.dart';
 
@@ -55,7 +56,7 @@ class _OptionsState extends State<Options> {
                 title: 'Import Existing Key',
                 colour: blueColor,
                 onPressed: () {
-                  //Navigator.pushNamed(context, Options.id);
+                  Navigator.pushNamed(context, MenuScreen.id);
                 },
               ),
             ),
