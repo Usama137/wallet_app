@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:walletapp/Screens/menu.dart';
 import 'package:walletapp/Screens/options.dart';
+import 'package:walletapp/Screens/receiveEthereum.dart';
+import 'package:walletapp/Screens/sendEthereum.dart';
 import 'package:walletapp/Screens/splash.dart';
 import 'package:walletapp/Screens/login.dart';
+import 'package:walletapp/Screens/wallet.dart';
+import 'package:walletapp/Screens/walletDescription.dart';
 
 
 void main() => runApp(MyApp());
@@ -20,6 +25,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
 
+
         debugShowCheckedModeBanner: false,
 
 //home:RecommendRecipe(),);
@@ -31,6 +37,10 @@ class _MyAppState extends State<MyApp> {
           Login.id:(context)=> Login(),
           Options.id:(context)=> Options(),
           MenuScreen.id:(context)=>MenuScreen(),
+          WalletDesc.id:(context)=>WalletDesc(),
+          Wallet.id:(context)=>Wallet(),
+          SendEthereum.id:(context)=>SendEthereum(),
+          ReceiveEthereum.id:(context)=>ReceiveEthereum(),
 
 
 

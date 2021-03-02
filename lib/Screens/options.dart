@@ -110,7 +110,7 @@ class _OptionsState extends State<Options> {
                     children: <Widget>[
                       Positioned.fill(
                         child: Image.asset(
-                          "images/crop.png",
+                          "images/blackLogoC.png",
                           colorBlendMode: BlendMode.darken,
                           fit: BoxFit.fitWidth,
                           alignment: Alignment.bottomLeft,

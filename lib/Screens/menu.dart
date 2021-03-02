@@ -31,6 +31,7 @@ class _MenuScreenState extends State<MenuScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      //backgroundColor: blueColor,
       body: pages[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: darkBlueColor,
@@ -97,6 +98,7 @@ class _MenuScreenState extends State<MenuScreen> {
         // items: i,
         type: BottomNavigationBarType.fixed,
       ),
+
     );
   }
 }
