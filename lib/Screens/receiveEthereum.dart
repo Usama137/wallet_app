@@ -199,49 +199,71 @@ class _ReceiveEthereumState extends State<ReceiveEthereum> {
                   ],
                 ),
               ),
+                SizedBox(
+                  height: 12,
+                ),
 
-              SizedBox(
-                height: 20,
-              ),
-              Stack(
+                Container(
+                  width: double.infinity,
+                  child: Stack(
+                    children: <Widget>[
+                      Container(
+                  height: 270,
+                  width: 270,
+                  decoration: BoxDecoration(
+                      color: blueColor,
+                      image:DecorationImage(
+                        image: AssetImage('images/blackLogoC.png', ),
+                        alignment: Alignment.bottomLeft,
 
-                children: <Widget>[
-                  Container(
-                    height: 270,
-                    width: 270,
-                    decoration: BoxDecoration(
-                        color: blueColor,
-                        image:DecorationImage(
-                          image: AssetImage('images/blackLogoC.png', ),
-                          alignment: Alignment.bottomLeft,
-
-                        )
-
-
-                    ),
-
-                    alignment: Alignment.bottomLeft,
-                  ),
-                  Container(
-                    width: 600,
-                    height: 600,
-                    decoration: BoxDecoration(
-                        //color: blueColor,
-                        image:DecorationImage(
-                          image: AssetImage('images/qrCodeN.png', ),
-                          alignment: Alignment.topCenter,
-                          fit: BoxFit.cover
-
-                        )
+                      )
 
 
-                    ),
-
-                    alignment: Alignment.topCenter,
                   ),
 
-                ],
-              )
+                  alignment: Alignment.bottomLeft,
+             ),
+
+                      Column(
+                        children: <Widget>[
+                          Center(
+                            child: Container(
+                              width: 120,
+                              height: 120,
+                              decoration: BoxDecoration(
+                                //color: blueColor,
+                                  image:DecorationImage(
+                                      image: AssetImage('images/newQR.jpeg', ),
+                                      alignment: Alignment.topCenter,
+                                      fit: BoxFit.cover
+
+                                  )
+
+
+                              ),
+
+                              //alignment: Alignment.topCenter,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          SmallRoundedButton(
+                            title: "Save QR Code",
+                            colour: lightBlueColor,
+                            onPressed: (){
+                              //function
+                            },
+                          )
+                        ],
+                      ),
+
+
+                    ],
+                  ),
+                ),
+//
+
 
 
 
