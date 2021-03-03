@@ -42,14 +42,14 @@ class _WalletState extends State<Wallet> {
                     ),
                     Text(
                       "\$ $balance",
-                      style: TextStyle(fontSize: 40, color: Colors.white),
+                      style: TextStyle(fontSize: 35, color: Colors.white),
                     ),
                     SizedBox(
-                      height: 10,
+                      height: 30,
                     ),
                     Text(
                       "Logoname Wallet",
-                      style: TextStyle(fontSize: 30, color: Colors.white),
+                      style: TextStyle(fontSize: 28, color: Colors.white),
                     ),
                     SizedBox(
                       height: 40,
@@ -63,8 +63,8 @@ class _WalletState extends State<Wallet> {
                               InkWell(
                                 child: Image.asset(
                                   "images/send.png",
-                                  height: 70,
-                                  width: 70,
+                                  height: 60,
+                                  width: 60,
                                 ),
                               ),
                               SizedBox(
@@ -73,7 +73,7 @@ class _WalletState extends State<Wallet> {
                               Text(
                                 "Send",
                                 style:
-                                    TextStyle(fontSize: 16, color: Colors.white),
+                                    TextStyle(fontSize: 13, color: Colors.white),
                               )
                             ],
                           ),
@@ -83,8 +83,8 @@ class _WalletState extends State<Wallet> {
                               InkWell(
                                 child: Image.asset(
                                   "images/receive.png",
-                                  height: 70,
-                                  width: 70,
+                                  height: 60,
+                                  width: 60,
                                 ),
                               ),
                               SizedBox(
@@ -93,7 +93,7 @@ class _WalletState extends State<Wallet> {
                               Text(
                                 "Receive",
                                 style:
-                                    TextStyle(fontSize: 16, color: Colors.white),
+                                    TextStyle(fontSize: 13, color: Colors.white),
                               )
                             ],
                           ),
@@ -103,8 +103,8 @@ class _WalletState extends State<Wallet> {
                               InkWell(
                                 child: Image.asset(
                                   "images/swap.png",
-                                  height: 70,
-                                  width: 70,
+                                  height: 60,
+                                  width: 60,
                                 ),
                               ),
                               SizedBox(
@@ -113,7 +113,7 @@ class _WalletState extends State<Wallet> {
                               Text(
                                 "Swap",
                                 style:
-                                    TextStyle(fontSize: 16, color: Colors.white),
+                                    TextStyle(fontSize: 14, color: Colors.white),
                               )
                             ],
                           ),

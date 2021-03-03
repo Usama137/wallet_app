@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:walletapp/components/constants.dart';
 import 'input_helper.dart';
 
 typedef void CaretMoved(Offset globalCaretPosition);
@@ -79,7 +80,7 @@ class _TrackingTextInputState extends State<TrackingTextInput> {
             hintText: widget.hint,
             labelText: widget.label,
             labelStyle: TextStyle(
-              color: Colors.white,
+              color: Colors.white30,
               fontSize: 20.0,
             )),
         key: _fieldKey,

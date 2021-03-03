@@ -4,6 +4,7 @@ import 'package:walletapp/Screens/receiveEthereum.dart';
 import 'package:walletapp/Screens/sendEthereum.dart';
 import 'package:walletapp/Screens/wallet.dart';
 import 'package:walletapp/components/constants.dart';
+import 'package:walletapp/Screens/swapEthereum.dart';
 
 class WalletDesc extends StatefulWidget {
   static const String id = 'walletDesc_screen';
@@ -61,7 +62,7 @@ class _WalletDescState extends State<WalletDesc> {
                       Text("Ethereum",
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 30
+                          fontSize: 23
                         ),
                           ),
                       Spacer(),
@@ -94,7 +95,7 @@ class _WalletDescState extends State<WalletDesc> {
 
 
                   SizedBox(
-                    height: 20,
+                    height: 30,
                   ),
                   Padding(
                     padding: const EdgeInsets.only(left: 40.0, right: 40),
@@ -105,8 +106,8 @@ class _WalletDescState extends State<WalletDesc> {
                             InkWell(
                               child: Image.asset(
                                 "images/send.png",
-                                height: 70,
-                                width: 70,
+                                height: 60,
+                                width: 60,
                               ),
                               onTap: (){
                                 Navigator.pushNamed(context, SendEthereum.id);
@@ -118,7 +119,7 @@ class _WalletDescState extends State<WalletDesc> {
                             Text(
                               "Send",
                               style:
-                              TextStyle(fontSize: 16, color: Colors.white),
+                              TextStyle(fontSize: 13, color: Colors.white),
                             )
                           ],
                         ),
@@ -128,8 +129,8 @@ class _WalletDescState extends State<WalletDesc> {
                             InkWell(
                               child: Image.asset(
                                 "images/receive.png",
-                                height: 70,
-                                width: 70,
+                                height: 60,
+                                width: 60,
                               ),
                               onTap: (){
                                 Navigator.pushNamed(context, ReceiveEthereum.id);
@@ -141,7 +142,7 @@ class _WalletDescState extends State<WalletDesc> {
                             Text(
                               "Receive",
                               style:
-                              TextStyle(fontSize: 16, color: Colors.white),
+                              TextStyle(fontSize: 13, color: Colors.white),
                             )
                           ],
                         ),
@@ -151,9 +152,13 @@ class _WalletDescState extends State<WalletDesc> {
                             InkWell(
                               child: Image.asset(
                                 "images/swap.png",
-                                height: 70,
-                                width: 70,
+                                height: 60,
+                                width: 60,
                               ),
+
+                              onTap: (){
+                                Navigator.pushNamed(context, SwapEthereum.id);
+                              },
                             ),
                             SizedBox(
                               height: 8,
@@ -161,7 +166,7 @@ class _WalletDescState extends State<WalletDesc> {
                             Text(
                               "Swap",
                               style:
-                              TextStyle(fontSize: 16, color: Colors.white),
+                              TextStyle(fontSize: 13, color: Colors.white),
                             )
                           ],
                         ),

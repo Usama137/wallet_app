@@ -6,6 +6,7 @@ import 'package:walletapp/Screens/receiveEthereum.dart';
 import 'package:walletapp/Screens/sendEthereum.dart';
 import 'package:walletapp/Screens/splash.dart';
 import 'package:walletapp/Screens/login.dart';
+import 'package:walletapp/Screens/swapEthereum.dart';
 import 'package:walletapp/Screens/wallet.dart';
 import 'package:walletapp/Screens/walletDescription.dart';
 
@@ -41,6 +42,7 @@ class _MyAppState extends State<MyApp> {
           Wallet.id:(context)=>Wallet(),
           SendEthereum.id:(context)=>SendEthereum(),
           ReceiveEthereum.id:(context)=>ReceiveEthereum(),
+          SwapEthereum.id:(context)=>SwapEthereum(),
 
 
 

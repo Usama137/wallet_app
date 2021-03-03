@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class SmallRoundedButton extends StatelessWidget {
+class SwapRoundedButton extends StatelessWidget {
 
-  SmallRoundedButton({this.title,this.colour,this.onPressed});
+  SwapRoundedButton({this.title,this.colour,this.onPressed});
   final Color colour;
   final String title;
   final Function onPressed;
@@ -17,8 +17,8 @@ class SmallRoundedButton extends StatelessWidget {
         borderRadius: BorderRadius.circular(10.0),
         child: MaterialButton(
           onPressed: onPressed,
-          minWidth: 120.0,
-          height: 35.0,
+          minWidth: 80.0,
+          height: 20.0,
           child: Text(
             title,
             style: TextStyle(color: Colors.white),

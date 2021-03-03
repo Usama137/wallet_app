@@ -95,7 +95,7 @@ class _ReceiveEthereumState extends State<ReceiveEthereum> {
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
                       "Select Network",
-                      style: TextStyle(color: Colors.white, fontSize: 16),
+                      style: TextStyle(color: lightBlueColor, fontSize: 16),
                       textAlign: TextAlign.start,
                     ),
                   ),

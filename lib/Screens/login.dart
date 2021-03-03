@@ -62,7 +62,7 @@ class _LoginState extends State<Login> {
               child: TrackingTextInput(
                 label: "username",
                 hint: "What's your email address?",
-                colour: Colors.white,
+                colour: lightBlueColor,
                 onTextChanged: (String value) {
                   email = value;
                 },
@@ -77,6 +77,7 @@ class _LoginState extends State<Login> {
               padding: const EdgeInsets.only(left:30.0, right: 30),
               child: TrackingTextInput(
                 label: "password",
+                colour: lightBlueColor,
                 hint: "Try try and try...",
                 isObscured: true,
                 onTextChanged: (String value) {

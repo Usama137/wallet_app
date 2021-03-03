@@ -82,7 +82,7 @@ class _SendInputState extends State<SendInput> {
             labelText: widget.label,
 
             labelStyle: TextStyle(
-              color: Colors.white,
+              color: Colors.white30,
               fontSize: 20.0,
             )),
         key: _fieldKey,

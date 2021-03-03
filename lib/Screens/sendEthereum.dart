@@ -109,7 +109,7 @@ class _SendEthereumState extends State<SendEthereum> {
                           child: SendInput(
                             label: "Recipient Address",
                             hint: "What's Recipient address?",
-                            colour: Colors.white,
+                            colour: Colors.grey,
                             onTextChanged: (String value) {
                               rcpt = value;
                             },
